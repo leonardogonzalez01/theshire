@@ -8,7 +8,7 @@ const Home = () => {
         <div>
             <Header/>
             <Container>
-
+soy el home
             </Container>
             <Footer/>
         </div>
