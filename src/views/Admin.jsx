@@ -1,4 +1,7 @@
 import React from 'react';
+import Header from "../components/commons/Header/Header";
+import Footer from "../components/commons/Footer/Footer";
+import Heros from "../components/Home/Heroes/Heros";
 
 const Admin = () => {
     return (
