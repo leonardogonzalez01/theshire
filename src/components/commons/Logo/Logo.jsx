@@ -1,10 +1,12 @@
 import React from 'react';
+import './Logo.css';
 
-const Logo = (props) => {
+const Logo = () => {
     return (
-        <div>
-            soy el logo
-        </div>
+        <img
+            className='shire-logo'
+            src="https://seeklogo.com/images/F/facebook-marketplace-logo-46A976DABC-seeklogo.com.png"
+            alt="logo"/>
     );
 };
 
