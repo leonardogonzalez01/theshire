@@ -5,3 +5,4 @@ export const addHeroeAction = heroe =>
 
 export const listHeroeAction = heroe =>
     dispatch => dispatch({type: LIST_HEROES, payload: heroe});
+

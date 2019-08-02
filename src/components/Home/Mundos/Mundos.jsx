@@ -1,30 +1,28 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { MDBBtn, MDBTable, MDBTableBody, MDBTableHead } from 'mdbreact';
-import Hero from "./Hero";
-const Heros = ({heroes}) => {
+import Mundo from "./Mundo";
+const Mundos = ({mundos}) => {
 
     return (
         <MDBTable title="Lista Herpoes">
             <MDBTableHead>
                 <tr>
-                    <th>#</th>
                     <th>Nombre</th>
-                    <th>Apodo</th>
-                    <th>Poder</th>
-                    <th>Arma</th>
+                    <th>Poblacion</th>
+                    <th>Ubicacion</th>
                     <th>Detalles</th>
                 </tr>
             </MDBTableHead>
             <MDBTableBody>
-                    {heroes.map(hero => <Hero key={hero.id} hero={hero}/>)}
+                    {mundos.map(mundo => <Mundo key={mundo.id} mundo={mundo}/>)}
             </MDBTableBody>
         </MDBTable>
     );
 };
 
 const mapStateToProps = state => ({
-    heroes: state.heroes.heroes
+    mundos: state.mundos.mundos
 });
 
-export default connect(mapStateToProps)(Heros);
+export default connect(mapStateToProps)(Mundos);

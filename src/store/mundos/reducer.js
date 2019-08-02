@@ -1,19 +1,19 @@
 import { initialState } from "./initialState";
-import {ADD_HEROES, LIST_HEROES} from "./const";
+import {ADD_MUNDOS, LIST_MUNDOS} from "./const";
 
 export default function reducer(state = initialState, action) {
     debugger;
     switch (action.type) {
-        case LIST_HEROES: {
+        case LIST_MUNDOS: {
             return {
-                ...state, heroes: state.heroes.concat(action.payload)
+                ...state, mundos: state.mundos.concat(action.payload)
 
             };
         }
-        case ADD_HEROES: {
+        case ADD_MUNDOS: {
             return {
                 ...state,
-                heroes: state.heroes.concat(action.payload)
+                mundos: state.mundos.concat(action.payload)
             }
         }
         default: {
