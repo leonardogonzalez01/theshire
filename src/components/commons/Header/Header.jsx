@@ -1,10 +1,12 @@
 import React from 'react';
+import {Container, MDBContainer} from 'mdbreact';
+import Nav from "../Nav/Nav";
 
 const Header = () => {
     return (
-        <div>
-            soy el header
-        </div>
+        <Container>
+            <Nav/>
+        </Container>
     );
 };
 
