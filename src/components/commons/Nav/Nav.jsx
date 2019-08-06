@@ -13,6 +13,12 @@ const Nav = () => {
                 <MDBNavItem>
                     <MDBNavLink className="white-text" exact to={'/admin'}>Admin</MDBNavLink>
                 </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink className="white-text" exact to={'/heroes'}>Lista Heroes</MDBNavLink>
+                </MDBNavItem>
+                <MDBNavItem>
+                    <MDBNavLink className="white-text" exact to={'/mundos'}>Lista Mundos</MDBNavLink>
+                </MDBNavItem>
             </MDBNav>
     );
 };

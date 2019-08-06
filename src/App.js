@@ -4,6 +4,8 @@ import store from './store/store'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from "./views/Home";
 import Admin from "./views/Admin";
+import Herolist from "./views/Herolist";
+import Mundoslist from "./views/Mundoslist";
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
         <Router>
           <Switch>
             <Route  path={'/admin'} exact component={Admin}/>
+              <Route  path={'/heroes'} exact component={Herolist}/>
+              <Route  path={'/mundos'} exact component={Mundoslist}/>
             <Route  path={'/'} exact component={Home}/>
           </Switch>
         </Router>
